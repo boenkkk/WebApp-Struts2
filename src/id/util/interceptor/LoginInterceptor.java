@@ -20,11 +20,10 @@ public class LoginInterceptor extends AbstractInterceptor{
 	public String intercept(ActionInvocation invocation) throws Exception {
 		Map<String, Object> session = invocation.getInvocationContext().getSession();
 
-		MenuAction menuAction = new MenuAction();
-		boolean isMenuAuthenticated = menuAction.roleAuthenticated(action, session.get("role").toString());
-
 		if (session != null && session.get("idUser") != null) {
 			LOG.info(action);
+			MenuAction menuAction = new MenuAction();
+			boolean isMenuAuthenticated = menuAction.roleAuthenticated(action, session.get("role").toString());
 			if(isMenuAuthenticated) {
 				return invocation.invoke();
 			}else {
