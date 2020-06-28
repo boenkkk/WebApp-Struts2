@@ -20,7 +20,7 @@
 							    						'<a><i class="fa fa-home"></i>'+json["namaMenu"]+'<span class="fa fa-chevron-down"></span></a>'+
 							    						'<ul class="nav child_menu">';
 							    		} else if(level == 2){
-							    			isi += '<li><a href="'+json['link']+'">'+json["namaMenu"]+'</a></li>';
+							    			isi += '<li><a href="${pageContext.request.contextPath}'+json['link']+'">'+json["namaMenu"]+'</a></li>';
 							    		}
 							    	});
 							    	$('.side-menu').append(isi);
