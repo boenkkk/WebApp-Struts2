@@ -4,8 +4,7 @@
 	
 	<package name="log" namespace="/log" extends="default">		
 		<interceptors>
-			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor">
-			</interceptor>
+			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor"/>
 			<interceptor-stack name="loginStack">
 				<interceptor-ref name="loginInterceptor"/>
 				<interceptor-ref name="defaultStack" />
@@ -51,12 +50,6 @@
 			</interceptor-stack>
 		</interceptors>
 		<default-interceptor-ref name="defaultStack" />
-		
-		<!-- Start Log Server -->
-		<!-- <action name="ProsesLunasTunggakanPerDist" class="id.pln.icon.p2apst.action.penarikanData.PelunasanTunggakan" method="LunasTunggakanPerDist">
-			<result type="json"></result>
-		</action> -->
-		<!-- End Log Server -->
 	</package>
 	
 </struts>

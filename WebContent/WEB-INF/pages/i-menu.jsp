@@ -7,7 +7,6 @@
 							    url : "LoadMenu",
 							    type: 'POST',
 							    success: function(res){
-							    	console.log(res);
 							    	$('.side-menu').html('');
 							    	var isi= '';
 							    	var menu = '';
@@ -17,7 +16,7 @@
 							    		var level = json["level"];
 							    		if(level == 1){
 							    			isi += '</ul></li><li>'+
-							    						'<a><i class="fa fa-home"></i>'+json["namaMenu"]+'<span class="fa fa-chevron-down"></span></a>'+
+							    						'<a><i class="'+json["icon"]+'"></i>'+json["namaMenu"]+'<span class="fa fa-chevron-down"></span></a>'+
 							    						'<ul class="nav child_menu">';
 							    		} else if(level == 2){
 							    			isi += '<li><a href="${pageContext.request.contextPath}'+json['link']+'">'+json["namaMenu"]+'</a></li>';

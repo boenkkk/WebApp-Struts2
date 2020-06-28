@@ -25,11 +25,22 @@
 		<link href="${pageContext.request.contextPath}/assets/admin/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
 		<!-- bootstrap-daterangepicker -->
 		<link href="${pageContext.request.contextPath}/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-		<!-- Custom Theme Style -->
+		
+		<!-- Datatables -->
+	    <link href="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+	    <link href="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+	    <link href="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+	    <link href="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+	    <link href="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+	    
+	    <!-- Custom Theme Style -->
 		<link href="${pageContext.request.contextPath}/assets/admin/build/css/custom.min.css" rel="stylesheet">
+		
+		<!-- Custom Style-->
+		<link href="${pageContext.request.contextPath}/assets/custom/css/custom.css" rel="stylesheet">
 	</head>
 
-	<body class="nav-md">
+	<body class="nav-md footer_fixed">
 		<!-- jQuery -->
 		<script src="${pageContext.request.contextPath}/assets/admin/vendors/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap -->
@@ -68,10 +79,32 @@
 		<script src="${pageContext.request.contextPath}/assets/admin/vendors/moment/min/moment.min.js"></script>
 		<script src="${pageContext.request.contextPath}/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 		
+		<!-- Datatables -->
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+		<script src="${pageContext.request.contextPath}/assets/admin/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+		
+		<!-- Loading Spinner -->
+		<div id="overlay" style="display:none;">
+		    <div class="spinner"></div>
+		    <br/>
+		    Loading...
+		</div>
+		<!-- /Loading Spinner -->
+		
 		<div class="container body">
 			<div class="main_container">
 				
-				<div class="col-md-3 left_col">
+				<div class="col-md-3 left_col menu_fixed">
 					<div class="left_col scroll-view">
 						<div class="navbar nav_title" style="border: 0;">
 							<a href="${pageContext.request.contextPath}/dashboard" class="site_title"><i class="fa fa-paw"></i> <span>WebApp</span></a>

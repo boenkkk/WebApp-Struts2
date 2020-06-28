@@ -4,8 +4,7 @@
 	
 	<package name="Login" namespace="/" extends="default">		
 		<interceptors>
-			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor">
-			</interceptor>
+			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor"/>
 			<interceptor-stack name="loginStack">
 				<interceptor-ref name="loginInterceptor"/>
 				<interceptor-ref name="defaultStack" />

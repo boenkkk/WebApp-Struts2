@@ -14,6 +14,9 @@
 	
 		<!-- Custom Theme Scripts -->
 		<script src="${pageContext.request.contextPath}/assets/admin/build/js/custom.min.js"></script>
+		
+		<!-- Custom Scripts -->
+		<script src="${pageContext.request.contextPath}/assets/custom/js/custom.js"></script>
 
 	</body>
 </html>

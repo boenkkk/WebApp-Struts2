@@ -10,8 +10,7 @@
    
    <package name="default" extends="struts-default" namespace="/">
       <interceptors>
-			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor">
-			</interceptor>
+			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor"/>
 			<interceptor-stack name="loginStack">
 				<interceptor-ref name="loginInterceptor"/>
 				<interceptor-ref name="defaultStack" />

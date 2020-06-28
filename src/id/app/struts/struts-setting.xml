@@ -4,8 +4,7 @@
 	
 	<package name="setting" namespace="/setting" extends="default">		
 		<interceptors>
-			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor">
-			</interceptor>
+			<interceptor class="id.util.interceptor.LoginInterceptor" name="loginInterceptor"/>
 			<interceptor-stack name="loginStack">
 				<interceptor-ref name="loginInterceptor"/>
 				<interceptor-ref name="defaultStack" />
@@ -23,14 +22,14 @@
 			</result>
 		</global-results>
 		
-		<!-- Start Data User -->
+		<!-- Data User -->
 		<action name="data-user">
 			<interceptor-ref name="loginStack">
 				<param name="loginInterceptor.action">data-user</param>
 			</interceptor-ref>
 			<result>/WEB-INF/pages/menu/DataUser.jsp</result>
 		</action>
-		<!-- End Data User -->
+		<!-- /Data User -->
 	</package>
 	
 	<package name="settingJson" namespace="/setting" extends="json-default">
@@ -43,11 +42,11 @@
 		</interceptors>
 		<default-interceptor-ref name="defaultStack" />
 		
-		<!-- Start Log Server -->
-		<!-- <action name="ProsesLunasTunggakanPerDist" class="id.pln.icon.p2apst.action.penarikanData.PelunasanTunggakan" method="LunasTunggakanPerDist">
+		<!-- Data User -->
+		<action name="GetDataUser" class="id.app.action.setting.DataUserAction" method="GetDataUser">
 			<result type="json"></result>
-		</action> -->
-		<!-- End Log Server -->
+		</action>
+		<!-- /Data User -->
 	</package>
 	
 </struts>
