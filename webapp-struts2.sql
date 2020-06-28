@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `master_menu` (
 -- Dumping data for table webapp-struts2.master_menu: ~2 rows (approximately)
 /*!40000 ALTER TABLE `master_menu` DISABLE KEYS */;
 INSERT INTO `master_menu` (`id_menu`, `nama_menu`, `icon_menu`) VALUES
-	(100, 'Setting', NULL),
-	(200, 'Aktivitas', NULL);
+	(100, 'Setting', 'fa fa-cogs'),
+	(200, 'Aktivitas', 'fa fa-tasks');
 /*!40000 ALTER TABLE `master_menu` ENABLE KEYS */;
 
 -- Dumping structure for table webapp-struts2.master_role
