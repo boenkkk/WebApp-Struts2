@@ -11,12 +11,20 @@ import id.app.service.MenuService;
 public class MenuAction extends ActionSupport{
 	
 	private static final long serialVersionUID = 1L;
+
 	private List<MenuModel> listMenu = new ArrayList<MenuModel>();
-	
+	private boolean isRoleAuthenticated;
+
 	public String loadMenu() {
 		MenuService service = new MenuService();
 		setListMenu(service.getMenu());
 		return SUCCESS;
+	}
+
+	public boolean roleAuthenticated(String action, String role) {
+		MenuService service = new MenuService();
+		setRoleAuthenticated(service.isRoleAuthenticated(action, role));
+		return isRoleAuthenticated;
 	}
 
 	//Getter Setter
@@ -26,6 +34,14 @@ public class MenuAction extends ActionSupport{
 
 	public void setListMenu(List<MenuModel> listMenu) {
 		this.listMenu = listMenu;
+	}
+
+	public boolean isRoleAuthenticated() {
+		return isRoleAuthenticated;
+	}
+
+	public void setRoleAuthenticated(boolean isRoleAuthenticated) {
+		this.isRoleAuthenticated = isRoleAuthenticated;
 	}
 	
 }

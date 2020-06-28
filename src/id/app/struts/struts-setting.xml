@@ -17,11 +17,17 @@
 				<param name="actionName">login</param>
 				<param name="namespace">/</param>
 			</result>
+			<result name="dashboard" type="redirectAction">
+				<param name="actionName">dashboard</param>
+				<param name="namespace">/</param>
+			</result>
 		</global-results>
 		
 		<!-- Start Data User -->
 		<action name="data-user">
-			<interceptor-ref name="loginStack"></interceptor-ref>
+			<interceptor-ref name="loginStack">
+				<param name="loginInterceptor.action">data-user</param>
+			</interceptor-ref>
 			<result>/WEB-INF/pages/menu/DataUser.jsp</result>
 		</action>
 		<!-- End Data User -->
