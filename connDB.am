@@ -1,0 +1,6 @@
+#Wed May 29 19:40:38 ICT 2019
+encr=1
+NB=rubah isi encr menjadi 0 ketika mengganti password
+user=cm9vdA\=\=
+password=
+url=jdbc\:mysql\://localhost\:3306/webapp-struts2
