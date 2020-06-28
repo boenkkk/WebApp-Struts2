@@ -72,9 +72,9 @@ CREATE TABLE IF NOT EXISTS `master_submenu` (
 -- Dumping data for table webapp-struts2.master_submenu: ~3 rows (approximately)
 /*!40000 ALTER TABLE `master_submenu` DISABLE KEYS */;
 INSERT INTO `master_submenu` (`id_submenu`, `id_menu`, `nama_submenu`, `link_menu`) VALUES
-	(101, 100, 'Data User', '/WebApp-Struts2/setting/data-user'),
-	(201, 200, 'Log Aktivitas', '/WebApp-Struts2/log/log-aktivitas'),
-	(202, 200, 'Log Server', '/WebApp-Struts2/log/log-server');
+	(101, 100, 'Data User', '/setting/data-user'),
+	(201, 200, 'Log Aktivitas', '/log/log-aktivitas'),
+	(202, 200, 'Log Server', '/log/log-server');
 /*!40000 ALTER TABLE `master_submenu` ENABLE KEYS */;
 
 -- Dumping structure for table webapp-struts2.user_id
